@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fars Grej</title>
+    <link rel="stylesheet" href="Amaliesstyle.css">
+    <link rel="stylesheet" href="styleShopFull.css">
+    <!-- linket til brugte stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Linket til fonts -->
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="/img/desktop-logo.png" alt="desktop-logo">
+        </a>
+    </nav>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Forside</a>
+            <a href="Frida.html" >Guide</a>
+            <a href="Amalie.html" class="active">Shop</a>
+            <a href="Nikolines.html">Community</a>
+            <a href="#">Om os</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </header>
+
+<main>
+    
+        <h2>Fiskestænger</h2>
+    
+    
+        <div class="product" id="product1">
+            <div class="leftSideOfBox">
+                <h2>Shimano Catana EX TE:</h2>
+                <p>Shimano Catana EX-TE er en teleskopisk fiskestang kendt for sin pålidelige kvalitet og alsidighed, ideel
+                    til let kystfiskeri og transport. Den tilbyder god følsomhed og er nem at håndtere, hvilket gør den
+                    velegnet til både begyndere og erfarne fiskere. <a href="#">Læs mere</a>
+                    </p>
+                    
+                    <span class="heart-btn"
+                    onclick="toggleLike('product1')"><i class="fas fa-heart"></i></span>
+            <p>Pris: 1000 dkk</p>
+        </div>
+            <div class="rightSideOfBox">
+                <img class="picture_box" src="/img/Fiskestang1.png" alt="">
+            </div>
+        </div>
+    
+        <div class="product" id="product2">
+            <div class="leftSideOfBox"> 
+                <h2>STC Mini:</h2>
+                <p>STC Mini er en rejse-spindestangserie fra Shimano, der tilbyder kompakthed og kvalitet. Ideel til fiskere
+                    på farten, den kombinerer bærbarhed med høj ydeevne og alsidighed for fiskeri overalt. 
+                    <a href="#">Læs mere</a>
+                </p>
+                <span class="heart-btn" onclick="toggleLike('product2')"><i class="fas fa-heart"></i></span>
+                <p>Pris: 1000 dkk</p>
+            </div>
+            
+            <div class="rightSideOfBox">
+                <img class="picture_box" src="/img/Fiskestang2.png" alt="">
+            </div>
+        </div>
+    
+    
+        <h2>Fiskehjul</h2>
+    
+    
+        <div class="product" id="product3">
+            <div class="leftSideOfBox">
+                <h2>Shimano Stradic FL: </h2>
+                <p>Shimano Stradic FL er et fremragende spinningshjul, der kombinerer holdbarhed, præcision og følsomhed.
+                    Den er elsket af fiskere for sin pålidelige ydeevne og er ideel til forskellige fiskerioplevelser. <a href="#">Læs mere</a></p> <span class="heart-btn" onclick="toggleLike('product3')"><i
+                        class="fas fa-heart"></i></span>
+                        <p>Pris: 1000 dkk</p>
+            </div>
+            <div class="rightSideOfBox">
+                <img class="picture_box" src="/img/fiskehjul1.png" alt="">
+            </div>
+        </div>
+    
+    
+    
+    
+        <div class="product" id="product4">
+            <div class="leftSideOfBox">
+                <h2>Shimano Nasci 4000 - c5000: </h2>
+                <p>Shimano Nasci 4000 og 5000 hjul er pålidelige og alsidige, velegnede til ferskvands- og let
+                    saltvandsfiskeri. De har en solid konstruktion og effektive bremser, og de er populære blandt fiskere,
+                    der søger kvalitet til rimelige priser. <a href="#">Læs mere</a></p> 
+                    <span class="heart-btn"
+                    onclick="toggleLike('product4')"><i class="fas fa-heart"></i></span>
+                    <p>Pris: 1000 dkk</p>
+            </div>
+            
+            <div class="rightSideOfBox"> 
+                <img class="picture_box" src="/img/Fiskestang2.png" alt="">
+            </div>
+        </div>
+        <!-- Tilføj Font Awesome-script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    
+</main>
+
+    <script>
+        function toggleLike(productId) {
+            var product = document.getElementById(productId);
+            var heartBtn = product.querySelector('.heart-btn');
+
+
+            if (heartBtn.classList.contains('liked')) {
+                heartBtn.classList.remove('liked');
+            } else {
+                heartBtn.classList.add('liked');
+            }
+        }
+    </script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+
+
+    <footer>
+        <p>&copy; 2022 Fars Grej. Alle rettigheder reserveret.</p>
+    </footer>
+</body>
+
+</html>

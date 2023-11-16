@@ -1,0 +1,30 @@
+/* Footer section */
+
+footer {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    background: #0000006b;
+    margin-top: 10vh;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.social-media-icons {
+    flex: 1; /* Takes up 50% of the available space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.social-media-icons img {
+    width: 25%;
+}
+
+.contact-info {
+    flex: 4;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}

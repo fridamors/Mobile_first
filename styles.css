@@ -1,0 +1,52 @@
+
+/* Hele siden */
+* {
+    font-family: Exo, sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: #E1DCD6;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+#opretForm {
+    display: block;
+    
+}
+
+.boxAround {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment, input {
+    border-radius: 5px;
+    border: none;
+}
+
+
+.opretForm {
+    display: flex;
+    flex-direction: column; 
+    background: #93BFD8;
+    margin: 10%;
+    padding: 10%;
+    border-radius: 10px;
+    line-height: 2.5;
+}
+
+.opretKnap {
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+    background: #307139;
+}

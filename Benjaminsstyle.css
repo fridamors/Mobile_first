@@ -1,0 +1,211 @@
+/* Responsive layout - når skærmen er mindre end 700px bred, vil kolonnerne blive stablet oven på hinanden i stedet for ved siden af ​​hinanden */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - når skærmen er mindre end 400px bred, vil navigationslinkene blive stablet oven på hinanden i stedet for ved siden af ​​hinanden */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/*---------------------------------------------------------Forside-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+
+.Kystfiskeren {
+    margin: 25px;
+    background-color: #4CAF50;
+    width: 329px;
+    height: 200px;
+    border-radius: 20px;
+    /* Add rounded ends */
+}
+
+.Micheal {
+    margin: 25px;
+    background-color: #4CAF50;
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    /* Add rounded ends */
+}
+
+.mortensfangst {
+    margin: 25px;
+    background-color: #4CAF50;
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    /* Add rounded ends */
+}
+
+.pic3 {
+    margin: 25px;
+    background-color: #4CAF50;
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    /* Add rounded ends */
+}
+
+
+.pic4 {
+    margin: 25px;
+    background-color: #4CAF50;
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    /* Add rounded ends */
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+/*-----------------------------------Fiskesteder content------------*/
+.FISKESTEDER-text {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.FISKESTEDER-content {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px;
+    /* Add padding for better spacing */
+
+}
+
+
+/*------------------------forside-fiskesteder----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+
+
+.img-right {
+    margin-right: 15px;
+}
+
+.FISKESTEDER {
+    margin: 25px;
+    width: 125px;
+    height: 125px;
+}
+
+.FISKESTEDER-text {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.FISKESTEDER-content {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.container-fisk {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+
+.content {
+    margin: 0 20px;
+}
+
+.container-content {
+    width: 500px;
+}
+
+@media screen and (min-width: 400px) {
+    .container-fisk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .upper, .lower {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainPictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Kystfiskeren {
+        width: 650px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        margin-left: 30px;
+        max-width: 550px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container-content {
+        width: 170px;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleShopFull.css" />
+    <link rel="stylesheet" href="Nikolinesstyle.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Fars Grej</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="/img/desktop-logo.png" alt="desktop-logo">
+        </a>
+    </nav>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Forside</a>
+            <a href="Frida.html" >Guide</a>
+            <a href="Amalie.html">Shop</a>
+            <a href="Nikolines.html" class="active">Community</a>
+            <a href="#">Om os</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </header>
+
+
+<main>
+    <section id="opretForm">
+        <div class="boxAround">
+            <h3><u>Opret opslag</u></h3>
+            <form class="opretForm">
+                <label for="name">Fulde navn:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="comment">Kommentar:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+                <label for="image">Indsæt billede:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+    
+                <label for="location">Lokation:</label>
+                <input type="text" id="location" name="location">
+    
+                <input type="submit" value="Opret opslag" class="opretKnap">
+            </form>
+        </div>
+</section>
+    
+
+
+        <div class="flexpil">
+            <div>
+                <a href="#">
+                    <img class="pil" src="img/pil.png" alt="pil" />
+                </a>
+            </div>
+            <div>
+                <h1 class="opslagH1">Opslag fra folket</h1>
+            </div>
+        </div>
+    
+    <div class="opslag">
+            <img class="havørred_2" src="img/havørred_michael.png" alt="Michaels havørred" />
+        
+
+        <h2 class="overskrift2">Michael Svane</h2>
+        <p class="brødtekst2">
+            Michael Koue Svane havde en mindeværdig dag ved vandet, da han formåede at
+            fange en imponerende havørred, der målte 62 cm og vejede 2,55 kg. Med sin
+            pålidelige Hansen Stripper 15 g fangede han det kraftfulde bytte og gjorde
+            det til en uforglemmelig fisketur. Det er historier som disse, der gør
+            fiskeri til en passion og skaber minder for livet.
+        </p>
+        <img class="ikoner" src="img/ikoner.png" alt="ikoner" />
+    </div>
+        
+        <div class="opslag">
+            <img class="havørred_2" src="img/michaels havørred 2.png" alt="havørred2" />
+            <h3 class="overskrift2">Michael Svane</h3>
+            <p class="brødtekst2">
+                En kold vinterdag, den 5. januar 2020, begav Michael Koue Svane sig ud til
+                vandet i jagten på den perfekte fangst. Det skulle vise sig at være en
+                uforglemmelig tur, da han fangede en pragtfuld havørred, målende 61 cm og
+                vejer 2,1 kg. Med sin trofaste følgesvend, en Hansen Inliner 17 g,
+                lykkedes det Michael at udfordre havørredens styrke og tage hjem med en
+                enestående fangst. En historie om tålmodighed og triumf ved vandet.
+            </p>
+            <img class="ikoner" src="img/ikoner.png" alt="ikoner" />
+        </div>
+
+        <div class="opslag">
+            <img class="jans_ørred" src="img/Jans 4 ørred i put & take.png" alt="jans 4 ørred" />
+            <h4 class="overskrift2">Jan Johansen</h4>
+            <p class="brødtekst2">
+                En solrig dag ved Put and Take-søen blev forvandlet til en spændende
+                fisketur for Jan S. Johansen. Bevæbnet med sin pålidelige Trumf 12 grams
+                agn, købt hos Fars-Grej, udfordrede han regnbueørrederne. Efter en
+                spændende kamp lykkedes det Jan at lande en imponerende fangst på hele 4
+                regnbueørreder, og han forlod søen med en smilende sjæl. Det er disse
+                øjeblikke, der gør fiskeri til en hjertevarmende oplevelse.
+            </p>
+            <img class="ikoner" src="img/ikoner.png" alt="ikoner" />
+        </div>
+
+        <div class="opslag">
+            <img class="emmas_ørred" src="img/Jans ørrred i put & take.png" alt="Ørred" />
+            <h5 class="overskrift2">Emma Christoffersen</h5>
+            <p class="brødtekst2">
+                Emma tog sin splinternye Shimano Catana EX-TE stang til Silkeborg Søerne
+                en solrig sommerdag. Efter en spændende kamp trak hun sin første
+                ferskvandsfisk op af vandet, en skinnende ørred. Det var et øjeblik, der
+                fyldte hende med glæde og en dyb forbindelse til naturen, og det markerede
+                begyndelsen på hendes kærlighed til fiskeri.
+            </p>
+            <img class="ikoner" src="img/ikoner.png" alt="ikoner" />
+        </div>
+</main>
+
+
+    <script>
+        function toggleLike(productId) {
+            var product = document.getElementById(productId);
+            var heartBtn = product.querySelector('.heart-btn');
+
+
+            if (heartBtn.classList.contains('liked')) {
+                heartBtn.classList.remove('liked');
+            } else {
+                heartBtn.classList.add('liked');
+            }
+        }
+    </script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleShopFull.css">
+    <link rel="stylesheet" href="Amaliesstyle.css">
+    
+    <!-- linket til mine stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Linket til fonts -->
+    <title>Opret opslag</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="/img/desktop-logo.png" alt="desktop-logo">
+        </a>
+    </nav>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Forside</a>
+            <a href="Frida.html" >Guide</a>
+            <a href="Amalie.html">Shop</a>
+            <a href="Nikolines.html">Community</a>
+            <a href="#">Om os</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section id="opretForm">
+            <div class="boxAround">
+                <h3><u>Opret opslag</u></h3>
+                <form class="opretForm">
+                    <label for="name">Fulde navn:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="comment">Kommentar:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+                    <label for="image">Indsæt billede:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+        
+                    <label for="location">Lokation:</label>
+                    <input type="text" id="location" name="location">
+        
+                    <input type="submit" value="Opret opslag" class="opretKnap">
+                </form>
+            </div>
+    </section>
+        
+    
+    
+    </main>
+    <footer>
+        <div class="social-media-icons">
+            <a href="#"><img src="images/Facebook_Icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedIn_icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/Instagram-Icon.png" alt="Instagram"></a>
+        </div>
+        <div class="contact-info">
+            <p>Contact Us:</p>
+            <p>Email: fitnessbud@*****.com</p>
+            <p>Telefon: +45 ** ** ** **</p>
+            <p>Address: 123 Street, City, Country</p>
+        </div>
+    </footer>
+</body>
+
+</html>

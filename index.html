@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fars Grej</title>
+    <link rel="stylesheet" href="Benjaminsstyle.css">
+    <link rel="stylesheet" href="styleShopFull.css">
+    <link rel="stylesheet" href="Amaliesstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="/img/desktop-logo.png" alt="desktop-logo">
+        </a>
+    </nav>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Forside</a>
+            <a href="Frida.html" >Guide</a>
+            <a href="Amalie.html">Shop</a>
+            <a href="Nikolines.html">Community</a>
+            <a href="#">Om os</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </header>
+<main>
+
+    <div class="mainPictures">
+            <img src="img/tumblr_optnde4E5y1u4tcnyo1_1280.jpg" class="Kystfiskeren" alt="Kystfiskeren">
+    </div>
+    
+        <div class="container container-fisk">
+            <div class="upper">
+                <div class="image-box">
+                    <img src="img/mortensfangst.jpg" class="Micheal" alt="Micheal">
+                    <div class="text-overlay">ABORRE GREJ</div>
+                </div>
+                <div class="image-box">
+                    <img src="img/Esox_lucius_ZOO_1.jpg" class="mortensfangst" alt="mortensfangst">
+                    <div class="text-overlay">GEDDE GREJ</div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="image-box">
+                    <img src="img/ba88cf65085534596bd8f117834a415c.jpg" class="pic3" alt="pic3">
+                    <div class="text-overlay">GENNENLØBERE</div>
+                </div>
+                <div class="image-box">
+                    <img src="img/pexels-mael-balland-3098597.jpg" class="pic4" alt="pic4">
+                    <div class="text-overlay">SHOPPEN</div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="container ">
+            <img src="img/Skærmbillede 2023-11-10 kl. 12.36.02.png" alt="FISKESTEDER" height="130px">
+            <div class="content">
+                <h1 class="FISKESTEDER-text">FISKESTEDER</h1>
+                <p class="container-content">Du kan finde nogle af de bedste fiskespot her på siden. Vi har selvfølgelig ikke alle, men vi har hvad folket har delt. Hvis du har et spot su tænker er guld værd, så del det med andre.</p>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <img src="img/Skærmbillede 2023-11-10 kl. 12.42.40.png" alt="FÆLLESSKAB" height="130px">
+            <div class="content">
+                <h1 class="FISKESTEDER-text">FÆLLESSKAB</h1>
+                <p class="container-content">Her præsenteres stolt dagens fiskefangster – et imponerende udvalg af friskfanget skaldyr og fisk. Del din egen stolthed ved at vise frem, hvad du har hentet op fra havet. Vi elsker at se mangfoldigheden af fantastiske fangster blandt vores fiskevenner! 🎣</p>
+            </div>
+        </div>
+</main>
+
+
+<script>
+    function toggleLike(productId) {
+        var product = document.getElementById(productId);
+        var heartBtn = product.querySelector('.heart-btn');
+
+
+        if (heartBtn.classList.contains('liked')) {
+            heartBtn.classList.remove('liked');
+        } else {
+            heartBtn.classList.add('liked');
+        }
+    }
+</script>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+
+</html>
